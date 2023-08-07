@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Model Prediction</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Prediction Result</h1>
+        {% if prediction == 1 %}
+            <p class="subscribe">The predicted output is: Customer will subscribe</p>
+        {% elif prediction == 0 %}
+            <p class="not-subscribe">The predicted output is: Customer will not subscribe</p>
+        {% endif %}
+    </div>
+</body>
+</html>
